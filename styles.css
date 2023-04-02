@@ -1,10 +1,13 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
 header {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
 }
-.nav{
-    float: right;
+.nav {
+  float: right;
 }
 header a {
   float: left;
@@ -28,13 +31,15 @@ header a.active {
 }
 
 header h1 {
+  font-family: "Fasthand", cursive;
+
   float: left;
 }
 
 @media screen and (max-width: 535px) {
-    .nav{
-        float: none;
-    }
+  .nav {
+    float: none;
+  }
   header a {
     float: none;
     display: block;
