@@ -1,9 +1,12 @@
+/* universal styles */
 body {
   font-family: "Montserrat", sans-serif;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
+/* header styles */
 header {
   overflow: hidden;
-  background-color: #f1f1f1;
   padding: 20px 10px;
 }
 .nav {
@@ -49,4 +52,25 @@ header h1 {
   header h1 {
     float: none;
   }
+}
+
+/* about me section styles */
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.about-me p {
+  margin-top: 1rem;
+}
+/* skills section styles */
+#skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#skills-container i {
+    margin-right: 1rem;
+  font-size: 2em;
 }
