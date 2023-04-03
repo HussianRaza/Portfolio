@@ -5,6 +5,17 @@ body {
   margin-left: 4rem;
   margin-right: 4rem;
 }
+/* main styles */
+main{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+/* page layout */
+.container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
 /* header styles */
 header {
   overflow: hidden;
@@ -40,7 +51,7 @@ header h1 {
   float: left;
 }
 
-@media screen and (max-width: 535px) {
+@media screen and (max-width: 688px) {
   .nav {
     float: none;
   }
@@ -53,15 +64,14 @@ header h1 {
   header h1 {
     float: none;
   }
+  .container {
+   display: block;
+  }
 }
 
 /* about me section styles */
 
-.container {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
-}
+
 .about-me p {
   margin-top: 1rem;
 }
