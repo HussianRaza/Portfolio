@@ -1,4 +1,8 @@
 /* universal styles */
+*{
+  color: black;
+  background-color: white;
+}
 body {
   text-transform: capitalize;
   font-family: "Montserrat", sans-serif;
@@ -26,7 +30,6 @@ header {
 }
 header a {
   float: left;
-  color: black;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -108,5 +111,5 @@ header h1 {
 padding-top: 1rem;
   font-weight: 600;
   text-decoration: none;
-  color: black;
 }
+
