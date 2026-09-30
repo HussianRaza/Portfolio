@@ -40,8 +40,19 @@ jobs:
 
       - name: Build static site
         env:
-          NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH }}
-        run: bun run build
+          CONFIGURED_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH }}
+        run: |
+          if [ -n "$CONFIGURED_BASE_PATH" ]; then
+            export NEXT_PUBLIC_BASE_PATH="$CONFIGURED_BASE_PATH"
+          else
+            REPO_NAME="${GITHUB_REPOSITORY#*/}"
+            REPO_OWNER="${GITHUB_REPOSITORY%/*}"
+            if [ "$REPO_NAME" != "$REPO_OWNER.github.io" ]; then
+              export NEXT_PUBLIC_BASE_PATH="/$REPO_NAME"
+            fi
+          fi
+          echo "Building static site with NEXT_PUBLIC_BASE_PATH=$NEXT_PUBLIC_BASE_PATH"
+          bun run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
