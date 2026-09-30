@@ -1,0 +1,97 @@
+﻿Build me a modern, professional, single-page developer portfolio website for Syed Hussain Raza, an AI/ML engineer and full-stack developer from Karachi, Pakistan. Deliver a complete, production-ready project (Next.js App Router + TypeScript + Tailwind CSS + Framer Motion + lucide-react, deployable on Vercel). Fast, accessible, fully responsive.
+
+
+## About me
+- Name: Syed Hussain Raza
+- Headline: AI Engineer & Full-Stack Developer
+- Tagline: Building offline-first AI systems, NLP/Vision pipelines, and scalable web platforms, with workflow automation in n8n.
+- Bio: BS Computer Science (AI specialization) graduate from NED University of Engineering and Technology (Oct 2022 – Aug 2026, CGPA 3.41/4.00, final-year GPA 3.51). I build end-to-end AI products, from deep learning models and RAG pipelines to FastAPI backends and Next.js frontends, and I automate workflows with n8n. Currently working as a freelance software engineer.
+- Contact: razahussain876@gmail.com | +92 320 9209725 | Karachi, Pakistan
+- LinkedIn: https://linkedin.com/in/syed-hussain-raza-029287199
+- GitHub: https://github.com/HussianRaza
+- "Download CV" button linking to /cv.pdf
+
+
+## Sections (in this order)
+
+
+1. **Hero**: name, headline, tagline, rotating text (AI Engineer, Full-Stack Developer, NLP & Vision Enthusiast, Automation Builder), CTA buttons "View Projects" / "Download CV" / "Contact Me", plus GitHub, LinkedIn and email icons.
+
+
+2. **About**: short bio, an education card (NED University, BSCS with AI specialization, cumulative GPA 3.41, final-year GPA 3.51, 130 credit hours, English medium C1), and relevant coursework as tags: Machine Learning, Deep Learning, NLP, Computer Vision, Speech Processing, Reinforcement Learning, AI & Expert Systems, Distributed Systems, Data Structures & Algorithms, Operating Systems, Linear Algebra & Geometry.
+
+
+3. **Skills**: grouped cards with icons:
+   - Languages: Python, TypeScript, JavaScript, Rust, C++, SQL, Bash
+   - AI/ML: PyTorch, Hugging Face Transformers (BERT, FLAN-T5, Whisper), Scikit-learn, OpenCV, Tesseract OCR, Quantized GGUF/AWQ, Retrieval-Augmented Generation (RAG)
+   - Full-Stack & Systems: FastAPI, Next.js, React, Node.js, Express, Tauri (Rust sidecar), Tailwind CSS, RESTful microservices
+   - Databases, DevOps & Automation: MongoDB, PostgreSQL, Redis, Docker, Bun, Git, GitHub Actions, Linux, Vercel, n8n (give n8n a small "Automation" badge and a tooltip: "Used in HR-tech workflows at Metatalent.AI")
+
+
+4. **Projects**: featured project cards with title, one-line summary, tech-stack badges, a "GitHub" button and an optional "Live Demo" button (hidden if no link). Add a filter bar: All / AI & ML / Full-Stack / Systems / Automation.
+
+
+   Featured projects:
+   - **AI Meeting Assistant (Offline Edge Companion)**: undergraduate capstone. An offline desktop app built with Tauri + React + TypeScript and a Rust sidecar, running deep learning models locally with no cloud APIs. Whisper handles low-latency real-time speech recognition, and an offline RAG pipeline with quantized LLMs produces automated meeting minutes and semantic Q&A. Stack: Tauri, Rust, React, TypeScript, Whisper, Quantized LLMs, RAG. GitHub: https://github.com/HussianRaza/meetAI (also related: https://github.com/HussianRaza/meet-fyp). Category: AI & ML, Systems.
+   - **FinSense, Financial Sentiment Intelligence Engine**: an end-to-end pipeline with a fine-tuned FinBERT model that classifies live financial news, served through low-latency async FastAPI endpoints with a Next.js frontend. Stack: FastAPI, Next.js, FinBERT, PyTorch, Market APIs. GitHub: https://github.com/HussianRaza/finsense-ai. Category: AI & ML, Full-Stack.
+   - **VisionScan (DocuScan), Document Computer Vision & OCR Pipeline**: a full-stack image-to-PDF web app. Drag-and-drop upload and page reordering; OpenCV processing (grayscale, CLAHE contrast enhancement, denoising, sharpening, contour-based document crop and perspective correction, auto-deskew, binarization, watermarking, GrabCut segmentation, Canny edge detection); Tesseract OCR text extraction; PDF export. Stack: Python, OpenCV, Tesseract OCR. GitHub: https://github.com/HussianRaza/visionscan-ipcv. Category: AI & ML, Full-Stack.
+   - **HR-Tech Skills & Career Platform (n8n Automation Workflows)**: built during my internship at Metatalent.AI. An HR-tech platform aimed at improving employee skills. I built n8n workflows that extract and parse user CVs, identify skills, recommend relevant jobs, and suggest learning paths for upskilling and role transitions. Stack: n8n, Webhooks, REST APIs, AI/LLM integration, MongoDB, Node.js. Category: Automation, AI & ML. This is company work with no public repo, so show an "Internship Project" badge instead of a GitHub button. Include a small flow diagram (CV upload → skill extraction → job matching → learning-path suggestions) as inline SVG or a Mermaid-style diagram. Describe it only at the level above. Do not invent metrics, client names or confidential details.
+   - **Crypto RL Trading Bot**: a reinforcement learning trading bot for BTC/ETH/SOL using PPO (Stable-Baselines3) on a custom Gymnasium environment with a rolling-Sharpe reward, benchmarked against four baselines (buy-and-hold, mean reversion, momentum, random). FastAPI backend and a React + Vite + Plotly dashboard. Educational project, not financial advice. GitHub: https://github.com/HussianRaza/cryptobot-rl. Category: AI & ML, Full-Stack.
+   - **NLP Intelligence Hub**: a Gradio + Hugging Face app for T5-based text summarization and sentiment analysis, with lazy model loading, deployable as a Hugging Face Space. GitHub: https://github.com/HussianRaza/NLP-project. Category: AI & ML.
+   - **KBRITEX, Global B2B Commodities Trading Architecture**: scalable backend data models and relational-in-document transaction schemas for an international commodity trading and supply-chain engine. Stack: Python, MongoDB, System Design. No public repo, so show a "Private / Case Study" badge instead of a GitHub button. Category: Systems.
+
+
+   Below the featured grid, add a "More on GitHub" section that fetches https://api.github.com/users/HussianRaza/repos?sort=updated&per_page=100 client-side, then:
+   - excludes forks and these repos: Portfolio, HussainRaza.github.io, portfolio-hussain, nextjs-dashboard, practice-rebase-off-platform-project, wedding-rsvp-off-platform-project, and any repo already featured above;
+   - shows name, description (fall back to "No description yet" if empty), language and stars;
+   - has loading skeletons, an error state, and a friendly fallback message if the API is rate-limited, plus a "View all on GitHub" button.
+
+
+5. **Experience**: vertical timeline:
+   - **Freelance Software Engineer** (Independent Contractor, Remote), June 2026 – Present
+     - Architect and deploy full-stack apps, backend microservices, and asynchronous REST APIs using Python, FastAPI, and TypeScript.
+     - Containerize services with Docker and manage CI/CD deployment pipelines across Linux VPS and managed cloud hosting.
+   - **Full Stack Intern**, Metatalent.AI, Karachi, Pakistan, February 2026 – June 2026
+     - Developed web applications and internal tools using React, Node.js, Express, and TypeScript.
+     - Structured MongoDB collections and aggregation pipelines; helped integrate ML inference endpoints into production platforms.
+     - Built n8n workflow automations for an HR-tech platform focused on employee upskilling: extracting skills from user CVs, recommending relevant jobs, and suggesting learning paths for career and role transitions.
+
+
+6. **Research & Seminars**: a card for "Multi-Agent Reinforcement Learning in Volatility Trading (OPHR Framework)", April 2026, NED University (Technical Presentation & Academic Review). Delivered an in-depth mathematical breakdown of the NeurIPS Order-Placement and Hedging Reinforcement (OPHR) framework, and evaluated cooperative multi-agent dynamics, market simulation, and reinforcement learning reward functions under high financial volatility. Add a subtle link to the Crypto RL Trading Bot as related hands-on RL work.
+
+
+7. **Contact**: a clean section with email, phone, LinkedIn and GitHub, plus a working contact form (use Formspree or Web3Forms) with client-side validation, a loading state and a success message.
+
+
+8. **Footer**: copyright, social links, back-to-top button.
+
+
+## Design & UX
+- Dark-mode-first "AI/tech" look with an indigo-to-cyan gradient accent, glassmorphism cards and generous whitespace. Include a light/dark toggle that respects system preference.
+- Typography: Inter for body text, JetBrains Mono for code and tech badges.
+- Smooth scrolling, a sticky navbar with active-section highlighting, and a mobile hamburger menu.
+- Subtle Framer Motion animations (fade/slide-in on scroll, card hover lift). Respect prefers-reduced-motion.
+- Optional: a lightweight animated neural-network/particle background in the hero.
+
+
+## Technical requirements
+- Next.js App Router, TypeScript, Tailwind CSS, Framer Motion, lucide-react.
+- Store all content (projects, skills, experience, seminars) in a single typed file, /data/portfolio.ts, so I can update it easily. Each project has: title, summary, category[], stack[], githubUrl?, demoUrl?, badge? ("Internship Project" | "Private / Case Study").
+- SEO: title, meta description, Open Graph tags, favicon, semantic HTML, alt text.
+- Accessibility: keyboard navigable, good contrast, ARIA labels.
+- Performance: Lighthouse 90+, optimized images via next/image.
+- Include a README with setup steps, how to edit content, how to add screenshots to project cards, and how to deploy to Vercel.
+
+- Must deploy to GitHub Pages as a static site:
+  - In next.config.ts set output: 'export', images: { unoptimized: true }, trailingSlash: true.
+  - Read an optional NEXT_PUBLIC_BASE_PATH env var and use it for basePath and assetPrefix (empty by default, so it works at the root of a user site).
+  - No server-only features: no API routes, server actions, middleware or next/image optimization. Everything must work as static files.
+  - Reference public assets (cv.pdf, images, favicon) with paths that respect the base path.
+  - Include .github/workflows/deploy.yml that builds with Node 20 and deploys the ./out folder using actions/configure-pages, actions/upload-pages-artifact and actions/deploy-pages, triggered on push to main.
+  - In the README, add GitHub Pages steps: Settings → Pages → Source: "GitHub Actions", plus how to set NEXT_PUBLIC_BASE_PATH if the repo is not named <username>.github.io.
+  - Add a .nojekyll file in /public.
+
+
+
+
+Start by outlining the folder structure, then provide all files with complete code.
