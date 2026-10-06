@@ -8,9 +8,6 @@ import {
   Lock,
   Briefcase,
   GitFork,
-  ArrowRight,
-  Workflow,
-  Sparkles,
 } from 'lucide-react';
 import { Project } from '@/data/portfolio';
 
@@ -69,42 +66,6 @@ export function ProjectCard({ project }: { project: Project }) {
         <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mt-2.5">
           {project.summary}
         </p>
-
-        {/* Inline Flow Diagram for n8n Metatalent Project */}
-        {project.hasFlowchart && project.flowchartSteps && (
-          <div className="my-5 p-4 rounded-xl border border-amber-500/30 bg-amber-50/40 dark:bg-slate-950/60 shadow-inner">
-            <div className="flex items-center gap-1.5 text-xs font-semibold text-amber-700 dark:text-amber-400 font-mono mb-3">
-              <Workflow className="w-3.5 h-3.5" />
-              <span>n8n Pipeline Architecture</span>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-4 gap-2 relative">
-              {project.flowchartSteps.map((step, idx) => (
-                <div
-                  key={step.step}
-                  className="flex flex-col p-2.5 rounded-lg bg-white/90 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-center relative"
-                >
-                  <span className="text-[10px] font-mono text-indigo-600 dark:text-cyan-400 font-semibold mb-0.5">
-                    Step 0{step.step}
-                  </span>
-                  <span className="text-xs font-bold text-slate-800 dark:text-slate-200">
-                    {step.title}
-                  </span>
-                  <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 leading-tight">
-                    {step.desc}
-                  </span>
-
-                  {/* Flow arrow for desktop */}
-                  {idx < project.flowchartSteps!.length - 1 && (
-                    <div className="hidden sm:block absolute -right-2 top-1/2 -translate-y-1/2 z-10 text-amber-500">
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
 
       <div>

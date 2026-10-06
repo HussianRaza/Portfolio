@@ -11,7 +11,6 @@ const navItems = [
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
-  { name: 'Research', href: '#research' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -24,7 +23,7 @@ export function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
 
-      const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'research', 'contact'];
+      const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -72,7 +71,7 @@ export function Navbar() {
                 Syed Hussain Raza
               </span>
               <span className="text-[10px] font-mono text-slate-500 dark:text-slate-400 -mt-0.5">
-                AI & Full-Stack
+                Software Engineer
               </span>
             </div>
           </Link>

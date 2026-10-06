@@ -55,7 +55,7 @@ export function Hero() {
           </span>
           <span className="flex items-center gap-1.5">
             <Sparkles className="w-3.5 h-3.5 text-indigo-500 dark:text-cyan-400" />
-            <span>Available for Freelance & Full-Stack AI Roles</span>
+            <span>Available for Software Engineering Roles</span>
           </span>
           <span className="text-slate-300 dark:text-slate-700">|</span>
           <span className="inline-flex items-center gap-1 text-slate-500 dark:text-slate-400">

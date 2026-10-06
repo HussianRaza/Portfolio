@@ -117,13 +117,13 @@ export function Contact() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/60 dark:bg-indigo-950/40 text-xs font-mono text-indigo-700 dark:text-cyan-400 mb-3">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>06. GET IN TOUCH</span>
+            <span>CONTACT</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Let&apos;s Build Together
+            Get In Touch
           </h2>
           <p className="mt-3 text-slate-600 dark:text-slate-400 text-sm sm:text-base">
-            Have a project in mind, an offline AI system to deploy, or a role to discuss? Reach out anytime.
+            Have an engineering role to discuss, a project in mind, or want to connect? Reach out anytime.
           </p>
         </div>
 

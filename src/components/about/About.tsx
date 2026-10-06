@@ -5,10 +5,7 @@ import { motion } from 'framer-motion';
 import {
   GraduationCap,
   BookOpen,
-  Award,
-  Globe2,
   Calendar,
-  Layers,
   Sparkles,
   CheckCircle2,
 } from 'lucide-react';
@@ -25,13 +22,13 @@ export function About() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/60 dark:bg-indigo-950/40 text-xs font-mono text-indigo-700 dark:text-cyan-400 mb-3">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>01. ABOUT ME</span>
+            <span>ABOUT ME</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Background &amp; Academic Foundation
+            Background &amp; Education
           </h2>
           <p className="mt-3 text-slate-600 dark:text-slate-400 text-sm sm:text-base">
-            Bridging foundational AI research with scalable real-world software engineering
+            Building reliable software and applied intelligence with solid computer science fundamentals
           </p>
         </div>
 
@@ -60,9 +57,9 @@ export function About() {
                   </p>
                 </div>
                 <div className="space-y-1">
-                  <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">Workflow Focus</span>
+                  <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">Architecture</span>
                   <p className="text-sm font-semibold text-slate-900 dark:text-white">
-                    n8n Automation &amp; Microservices
+                    Async APIs &amp; Microservices
                   </p>
                 </div>
               </div>
@@ -93,63 +90,24 @@ export function About() {
           >
             {/* Education Card */}
             <div className="p-6 sm:p-8 rounded-2xl border border-indigo-200/70 dark:border-indigo-900/60 bg-gradient-to-br from-white/80 via-white/60 to-indigo-50/40 dark:from-slate-900/80 dark:via-slate-900/60 dark:to-indigo-950/20 backdrop-blur-md shadow-sm">
-              <div className="flex items-start justify-between gap-4 mb-4">
-                <div className="flex items-center gap-3">
-                  <div className="p-2.5 rounded-xl bg-indigo-500/10 dark:bg-cyan-500/10 text-indigo-600 dark:text-cyan-400">
-                    <GraduationCap className="w-6 h-6" />
-                  </div>
-                  <div>
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-xl bg-indigo-500/10 dark:bg-cyan-500/10 text-indigo-600 dark:text-cyan-400 shrink-0">
+                  <GraduationCap className="w-6 h-6" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                     <h4 className="text-lg font-bold text-slate-900 dark:text-white">
                       {education.institution}
                     </h4>
-                    <p className="text-sm font-medium text-indigo-600 dark:text-cyan-400">
-                      {education.degree}
-                    </p>
+                    <span className="flex items-center gap-1.5 text-xs font-mono text-slate-500 dark:text-slate-400">
+                      <Calendar className="w-3.5 h-3.5 text-slate-400" />
+                      {education.period}
+                    </span>
                   </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 my-5">
-                <div className="p-3 rounded-xl bg-slate-100/70 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/50">
-                  <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400 flex items-center gap-1">
-                    <Award className="w-3 h-3 text-amber-500" />
-                    CGPA
-                  </span>
-                  <p className="text-base font-bold text-slate-900 dark:text-white mt-0.5">
-                    {education.cgpa}
+                  <p className="text-sm font-medium text-indigo-600 dark:text-cyan-400 mt-1">
+                    {education.degree}
                   </p>
                 </div>
-
-                <div className="p-3 rounded-xl bg-slate-100/70 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/50">
-                  <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400 flex items-center gap-1">
-                    <Award className="w-3 h-3 text-cyan-500" />
-                    Final Year GPA
-                  </span>
-                  <p className="text-base font-bold text-slate-900 dark:text-white mt-0.5">
-                    {education.finalYearGpa}
-                  </p>
-                </div>
-
-                <div className="p-3 rounded-xl bg-slate-100/70 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/50 col-span-2 sm:col-span-1">
-                  <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400 flex items-center gap-1">
-                    <Layers className="w-3 h-3 text-indigo-500" />
-                    Curriculum
-                  </span>
-                  <p className="text-xs font-semibold text-slate-900 dark:text-white mt-1">
-                    {education.creditHours}
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-slate-500 dark:text-slate-400 pt-2 border-t border-slate-200 dark:border-slate-800">
-                <span className="flex items-center gap-1.5">
-                  <Calendar className="w-3.5 h-3.5 text-slate-400" />
-                  {education.period}
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <Globe2 className="w-3.5 h-3.5 text-slate-400" />
-                  {education.languageMedium}
-                </span>
               </div>
             </div>
 
@@ -177,3 +135,4 @@ export function About() {
     </section>
   );
 }
+

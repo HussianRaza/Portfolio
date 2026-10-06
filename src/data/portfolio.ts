@@ -71,10 +71,6 @@ export interface PersonalInfo {
     institution: string;
     degree: string;
     period: string;
-    cgpa: string;
-    finalYearGpa: string;
-    creditHours: string;
-    languageMedium: string;
     coursework: string[];
   };
 }
@@ -82,15 +78,14 @@ export interface PersonalInfo {
 export const portfolioData = {
   personal: {
     name: "Syed Hussain Raza",
-    headline: "AI Engineer & Full-Stack Developer",
-    tagline: "Building offline-first AI systems, NLP/Vision pipelines, and scalable web platforms, with workflow automation in n8n.",
+    headline: "Software Engineer & Full-Stack Developer",
+    tagline: "Building high-performance web platforms, offline AI systems, and scalable backend services.",
     rotatingRoles: [
-      "AI Engineer",
+      "Software Engineer",
       "Full-Stack Developer",
-      "NLP & Vision Enthusiast",
-      "Automation Builder"
+      "Backend & AI Engineer"
     ],
-    bio: "BS Computer Science (AI specialization) graduate from NED University of Engineering and Technology (Oct 2022 – Aug 2026, CGPA 3.41/4.00, final-year GPA 3.51). I build end-to-end AI products, from deep learning models and RAG pipelines to FastAPI backends and Next.js frontends, and I automate workflows with n8n. Currently working as a freelance software engineer.",
+    bio: "Software Engineer and Computer Science graduate from NED University of Engineering and Technology. I specialize in building end-to-end web applications, distributed backend services, and offline AI systems—spanning FastAPI microservices, Next.js frontends, local LLM pipelines, and automated workflows.",
     contact: {
       email: "razahussain876@gmail.com",
       phone: "+92 320 9209725",
@@ -105,22 +100,15 @@ export const portfolioData = {
       institution: "NED University of Engineering and Technology",
       degree: "BS Computer Science (AI Specialization)",
       period: "Oct 2022 – Aug 2026",
-      cgpa: "3.41 / 4.00",
-      finalYearGpa: "3.51",
-      creditHours: "130 credit hours",
-      languageMedium: "English medium (C1)",
       coursework: [
-        "Machine Learning",
-        "Deep Learning",
-        "NLP",
-        "Computer Vision",
-        "Speech Processing",
-        "Reinforcement Learning",
-        "AI & Expert Systems",
-        "Distributed Systems",
         "Data Structures & Algorithms",
         "Operating Systems",
-        "Linear Algebra & Geometry",
+        "Distributed Systems",
+        "Machine Learning",
+        "Deep Learning",
+        "Natural Language Processing",
+        "Computer Vision",
+        "Reinforcement Learning",
       ],
     },
   } as PersonalInfo,
@@ -182,12 +170,7 @@ export const portfolioData = {
         { name: "Git & GitHub Actions" },
         { name: "Linux" },
         { name: "Vercel" },
-        {
-          name: "n8n",
-          highlight: true,
-          badge: "Automation",
-          tooltip: "Used in HR-tech workflows at Metatalent.AI",
-        },
+        { name: "n8n", highlight: true },
       ],
     },
   ] as SkillCategory[],
@@ -227,13 +210,6 @@ export const portfolioData = {
       category: ["Automation", "AI & ML"],
       stack: ["n8n", "Webhooks", "REST APIs", "AI/LLM integration", "MongoDB", "Node.js"],
       badge: "Internship Project",
-      hasFlowchart: true,
-      flowchartSteps: [
-        { step: 1, title: "CV Ingestion", desc: "PDF/Doc resume uploaded via webhook" },
-        { step: 2, title: "Skill Parsing", desc: "LLM extraction & taxonomy normalization" },
-        { step: 3, title: "Job Matching", desc: "Vector similarity with open positions" },
-        { step: 4, title: "Learning Paths", desc: "Actionable milestones for role transitions" },
-      ],
     },
     {
       id: "cryptobot-rl",

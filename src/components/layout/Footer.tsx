@@ -31,7 +31,7 @@ export function Footer() {
                 {personal.name}
               </p>
               <p className="text-xs text-slate-500 dark:text-slate-400 font-mono">
-                AI Engineer &amp; Full-Stack Developer
+                Software Engineer &amp; Full-Stack Developer
               </p>
             </div>
           </div>
